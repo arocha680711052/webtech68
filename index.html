@@ -1,95 +1,121 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUZOOOO</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"></head>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SUZOOOO</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <style>
+    #myCarousel .carousel-item img {
+      height: clamp(200px, 50vw, 500px);
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+      image-rendering: auto;
+    }
+  </style>
+</head>
 
 <body>
-    
- <nav class="navbar navbar-expand-lg navbar-dark bg-dark"></nav>   
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top shadow-sm navbar-dark bg-dark">
     <div class="container-fluid">
-        <a class="navbar-brand display-1 fw-bold" href="#">SUZOOOO</a>
-        <button class="navbar-toggler" type="button" 
-                data-bs-toggle="collapse" 
-                data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <!-- Navigation Links -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#"></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">contact</a>
-                </li>
+      <a class="navbar-brand" href="#">SUZOOOO</a>
+
+      <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              หมวดหมู่สัตว์
+            </a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Home</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="https://807.vercel.app/">ตัวเงินตัวทอง</a></li>
+              <li><a class="dropdown-item" href="https://zen-iota-ten.vercel.app/">สุนัข</a></li>
+              
+              <li><a class="dropdown-item" href="https://web-six-eosin-87.vercel.app/">สัตว์น้ำ</a></li>
+              <li><a class="dropdown-item" href="https://bird-six-psi.vercel.app/">นก</a></li>
             </ul>
-        </div>
+          </li>
+        </ul>
+      </div>
+
     </div>
-</nav>
+  </nav>
 
-<!-- Carousel พื้นฐาน -->
-<style>
-#myCarousel .carousel-item img{
-   height: clamp(200px, 50vw, 500px);
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-  image-rendering: auto;
-}
-</style>
-<div id="myCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
-
-    <!-- Indicators (จุดบอกสไลด์) -->
+  <!-- Carousel -->
+  <div id="myCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
     <div class="carousel-indicators">
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
     </div>
 
-    <!-- Slides -->
     <div class="carousel-inner">
-        <div class="carousel-item active"data-bs-interval="10000">
-            <img src="https://i.ibb.co/rKHBf2py/IMG-3903.jpg" class="d-block w-100" alt="Slide 1">
-            <div class="carousel-caption d-none d-md-block">
-                <p class="text-center fw-bold ">welcome to SUZOOOO</p>
-                <p class="fst-italic">สัตว์ต่างๆในมหาวิทยาลัยศิลปากร
-                </p>
-            </div>
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="https://res.cloudinary.com/dodc8y8bt/image/upload/v1775317759/IMG_3903_gilnru.jpg?fbclid=IwY2xjawQ-EphleHRuA2FlbQIxMABicmlkETE2Vzl6aGppOW9Ed0F4QnpMc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHv16FkzD5lGEl0IJG8xWDtQuFVXVMs_KFnfD5hgN8PCrk_uUzLrKO-l8UI4W_aem_qpOPER4MxMp67AS8-_am7Q" class="d-block w-100" alt="Slide 1">
+        <div class="carousel-caption d-none d-md-block">
+          <p class="text-center fw-bold">welcome to SUZOOOO</p>
+          <p class="fst-italic">สัตว์ต่างๆในมหาวิทยาลัยศิลปากร</p>
         </div>
-        <div class="carousel-item"data-bs-interval="5000">
-            <img src="https://picsum.photos/800/400?random=2" class="d-block w-100" alt="Slide 2">
-        </div>
-        <div class="carousel-item"data-bs-interval="5000">
-            <img src="https://picsum.photos/800/400?random=3" class="d-block w-100" alt="Slide 3">
-        </div>
+      </div>
+
+      <div class="carousel-item" data-bs-interval="5000">
+        <img src="https://f.ptcdn.info/559/059/000/peiwwtsf3GKq0caC5IS-o.jpg" class="d-block w-100" alt="Slide 2">
+      </div>
+
+      <div class="carousel-item" data-bs-interval="5000">
+        <img src="https://f.ptcdn.info/559/059/000/peix4bxr9f2DvstNUWd-o.jpg" class="d-block w-100" alt="Slide 3">
+      </div>
     </div>
 
-    <!-- ปุ่มเลื่อน -->
     <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-    </button>
-</div>
-</div>
 
-<div class="container">
-  <div class="row g-3">
-    <div class="col-12 col-md-6 col-lg-3">
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Cards -->
+  <div class="container">
+    <div class="row g-3">
+      <div class="col-12 col-md-6 col-lg-3">
       <div class="card shadow-lg">
         <a class="d-block rounded overflow-hidden ratio ratio-1x1"
-           href="https://l.facebook.com/l.php?u=https%3A%2F%2F807.vercel.app%2F%3Ffbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBExb3oxWEZoY1V0dFdmSWZIS3NydGMGYXBwX2lkEDIyMjAzOTE3ODgyMDA4OTIAAR7yxCO4WvpRGiQt6k9JnraRidfXSgIeB05Z9fJ_U40JrN9Zcrf8jClsP-STPQ_aem_V0xUCeNOK-ppoqexyXDaoQ&h=AT6Tgf9cHR95lWRr5d0brzwXTJ5n8WSH0MckojusZ79vwpQy1weCODCiBs4ROpqZMzkeNFJGQ-I74z7TFr9Voi4ZUIoW-fxzAWcaVrygBU0x-qFXkqUaRH-5D_sm2WA">
+           href="https://807.vercel.app/?fbclid=IwY2xjawQ-AEFleHRuA2FlbQIxMABicmlkETE2Vzl6aGppOW9Ed0F4QnpMc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHhCYKLBwooQVoTAavnK_RpADjAnyZq49P3gu4ALLjQCSVpiGZMRTPVNJKQjU_aem_Lqq-BWFRDiZ6hmVSYSs3zQ">
           <img src="https://i.ibb.co/3m2C1yHF/IMG-3892.jpg"
                class="w-100 h-100"
                style="object-fit: cover;"
                alt="">
         </a>
+        <p class="text-center my-2">ตัวเงินตัวทอง</p>
       </div>
     </div>
 
@@ -102,6 +128,7 @@
                style="object-fit: cover;"
                alt="">
         </a>
+        <p class="text-center my-2">สุนัข</p>
       </div>
     </div>
 
@@ -114,6 +141,7 @@
                style="object-fit: cover;"
                alt="">
         </a>
+        <p class="text-center my-2">สัตว์น้ำ</p>
       </div>
     </div>
 
@@ -126,9 +154,18 @@
                style="object-fit: cover;"
                alt="">
         </a>
+        <p class="text-center my-2">นก</p>
       </div>
     </div>
+    </div>
   </div>
-</div>
+
+  <footer class="mt-4 p-3 text-center">
+    โครงงานรายวิชา Web Technology
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 </body>
 </html>
